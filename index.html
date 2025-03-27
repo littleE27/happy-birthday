@@ -553,8 +553,8 @@
             <div class="wishes-container">
                 <h2>To The Love Of My Life</h2>
                 <p>Happy 33rd birthday, my man!</p>
-                <p>Throughout these years, your unwavering love, support, and encouragement have been my constant source of strength. Whether it was facing everyday challenges or chasing after our dreams, you’ve always been by my side. Today, we watch our energetic 2-year-old explore the world, and in just a few months, we’ll expand our family’s love with another precious addition. </p>
-                <p>As we look to the future, I’m filled with excitement and hope. Here’s to more beautiful memories, laughter, and love. Happy birthday, and may this new chapter of your life be filled with good health, success, and all the happiness your heart desires.</p>
+                <p>Throughout these years, your unwavering love, support, and encouragement have been my constant source of strength. Whether it was facing everyday challenges or chasing after our dreams, you've always been by my side. Today, we watch our energetic 2-year-old explore the world, and in just a few months, we'll expand our family's love with another precious addition. </p>
+                <p>As we look to the future, I'm filled with excitement and hope. Here's to more beautiful memories, laughter, and love. Happy birthday, and may this new chapter of your life be filled with good health, success, and all the happiness your heart desires.</p>
                 <div class="signature">Forever yours, <br>Manyi</div>
             </div>
         </div>
@@ -599,13 +599,13 @@
         }
         
         // Play birthday music (uncomment to enable)
-        // function playMusic() {
-        //     const audio = new Audio('birthday.mp3');
-        //     audio.loop = true;
-        //     document.body.addEventListener('click', function() {
-        //         audio.play();
-        //     }, { once: true });
-        // }
+        function playMusic() {
+            const audio = new Audio('music/my-heart-will-go-on.mp3');
+            audio.loop = true;
+            document.body.addEventListener('click', function() {
+                audio.play();
+            }, { once: true });
+        }
         
         document.addEventListener('DOMContentLoaded', function() {
             // 获取所有照片和灯箱元素
@@ -648,7 +648,7 @@
 
         window.addEventListener('load', function() {
             createHearts();
-            // playMusic(); // Uncomment to enable music
+            playMusic(); // Uncomment to enable music
         });
     </script>
 </body>
